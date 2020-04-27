@@ -2,7 +2,7 @@
 
 To use this, you must have [Python 3](https://www.python.org/), [Music21](https://web.mit.edu/music21/), and [AutoHotkey](https://www.autohotkey.com/) installed. You must also have an environment to run Python scripts in! I recommend [VSCode](https://code.visualstudio.com/) if you don't have one already.
 
-Instructions are printed to the terminal, so all you have to do is follow along for the most part. Before you start, set up the keybinds.txt file with your keybinds for the 10 abilities. If you had the default keybinds, the file would read "1234567890".
+Make sure there is only one .mid (MIDI) file in the same directory as the script, as it just uses the first MIDI it finds in the directory. Instructions are printed to the terminal, so all you have to do is follow along for the most part. Before you start, set up the keybinds.txt file with your keybinds for the 10 abilities. If you had the default keybinds, the file would read "1234567890".
 
 Notes about selecting a track and removing notes:
 * Many MIDIs simply will not work or will be quite painful to get to work with this script. Try to find a MIDI where the *main* piece of the music is in its own track.
