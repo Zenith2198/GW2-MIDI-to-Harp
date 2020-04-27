@@ -73,7 +73,6 @@ print("There are " + str(len(songkeylist)) + " notes.")
 
 #removes notes to fit into a specific major
 print("Enter the notes you would like removed. To remove multiple notes, enter them with a space between each note. To remove no notes, simply hit enter.")
-print("NOTE: The notes MUST fit into a key. This means:\n\tthere must be no more than 7 notes\n\tthere can't be both sharps (#) and flats (-)\n\tthere can't be two versions of the same note (ex: C and C# can't be in the same key)\nThe best idea is to remove the notes that have the least occurrences while still following these three rules.")
 removedNotes = input().split()
 it = 0
 while it < len(notes):
