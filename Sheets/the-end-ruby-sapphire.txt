@@ -1,9 +1,9 @@
 [] = lower octave
 () = higher octave
 tempo = allegrissimo 138.0
-a@b = 0.66 quarter notes long (286.95652173913044 ms)		1 note
+a@b = 0.66 quarter notes long (286.95652173913044 ms)		8 notes
 a b = 1.0 quarter notes long (434.7826086956522 ms)		388 notes
-a ! b = 1.33 quarter notes long (578.2608695652175 ms)		1 note
+a ! b = 1.33 quarter notes long (578.2608695652175 ms)		8 notes
 a _ b = 2.0 quarter notes long (869.5652173913044 ms)		6 notes
 a
 b = 4.0 quarter notes long (1739.1304347826087 ms)		6 notes

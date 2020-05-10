@@ -251,10 +251,11 @@ print("Your script has been generated!")
 #write sheet music
 noteTypes = {}
 for n in notes:
-    if not n[2] in noteTypes:
-        noteTypes[float(str(float(n[2]))[:4])] = 1
+    convn2 = float(str(float(n[2]))[:4])
+    if not convn2 in noteTypes:
+        noteTypes[convn2] = 1
     else:
-        noteTypes[n[2]] = noteTypes[n[2]] + 1
+        noteTypes[convn2] = noteTypes[convn2] + 1
 ntList = []
 for n in noteTypes:
     ntList.append(float(str(n)[:4]))
@@ -293,11 +294,10 @@ sheet.write("[] = lower octave\n() = higher octave\ntempo = " + tempo.text + " "
 for i in range(0, len(ntList)):
     sheet.write("a")
     sheet.write(ntMap[ntList[i]])
-    sheet.write("b = " + str(ntList[i]) + " quarter notes long (" + str(ntList[i] * timeBetweenNotes) + " ms)\t\t" + str(noteTypes[ntList[i]]))
-    if noteTypes[ntList[i]] == 1:
-        sheet.write(" note\n")
-    else:
-        sheet.write(" notes\n")
+    sheet.write("b = " + str(ntList[i]) + " quarter notes long (" + str(ntList[i] * timeBetweenNotes) + " ms)\t\t" + str(noteTypes[ntList[i]]) + " note")
+    if not noteTypes[ntList[i]] == 1:
+        sheet.write("s")
+    sheet.write("\n")
 sheet.write("\n")
 sheet.write("Sheet music:\n")
 mode = mean(octaveslist) #for notation
