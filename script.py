@@ -1,9 +1,10 @@
 from music21 import converter, note, tempo
-from glob import glob
+from os import listdir
 from statistics import mean
 
 #gets the first .mid file in the directory and converts it to a Music21 score
-score = converter.parse(glob("*.mid")[0])
+score = converter.parse(list(f for f in listdir(".") if f.endswith(".mid"))[0])
+# score = converter.parse("GW2-MIDI-to-Harp/" + str(list(f for f in listdir("GW2-MIDI-to-Harp") if f.endswith(".mid"))[0])) # for some reason if you run this in vscode it thinks it's in the directory above if you cloned from github. if this line throws an error, comment it out and uncomment the one before it. also do this with lines 137, 218, 291
 
 #finds the tempo of the score
 for p in score.flat.elements:
@@ -133,6 +134,7 @@ for i in range(0, len(songkeylist)):
 noteRange = ['C', 'D', 'E', 'F', 'G', 'A', 'B']
 keybinds = []
 keybindsFile = open('keybinds.txt', 'r')
+# keybindsFile = open('GW2-MIDI-to-Harp/keybinds.txt', 'r') # if you're getting an error here, comment out this line and uncomment the one above
 for i in range(0, 10):
     keybinds.append(keybindsFile.read(1))
 keymap = {}
@@ -213,6 +215,7 @@ elif songkey & bfmajor == songkey:
 
 #write the ahk script
 ahk = open("script.ahk", "w")
+# ahk = open("GW2-MIDI-to-Harp/script.ahk", "w") #uncomment the one above if you got errors before :)
 ahk.write("Sleep, 5000\n") #gives you time to tab into GW2
 firstNoteO = notes[0][1] #allows you to start on middle octave in GW2
 realFNO = firstNoteO if firstNoteO in octaveslist else octaveReplaceMap[firstNoteO]
@@ -262,6 +265,9 @@ for nt in ntList:
     tempString = ""
     if nts[:1] == "1":
         tempString += " "
+        if nts == "1.0":
+            ntMap[nt] = tempString
+            continue
     else:
         for i in range(1, int(nts[:1])):
             tempString += "\n"
@@ -272,18 +278,17 @@ for nt in ntList:
             tempString += "-"
         elif int(nts[2:]) / 25 == 3:
             tempString += "_"
-        if nts[:1] == "1":
-            tempString += " "
     if int(nts[2:]) % 33 == 0:
         if int(nts[2:]) / 33 == 1:
             tempString += "!"
         elif int(nts[2:]) / 33 == 2:
             tempString += "@"
-        if nts[:1] == "1":
-            tempString += " "
+    if nts[:1] == "1":
+        tempString += " "
     ntMap[nt] = tempString
 
 sheet = open("sheet.txt", "w")
+# sheet = open("GW2-MIDI-to-Harp/sheet.txt", "w") #uncomment the one above if you got errors before :)
 sheet.write("[] = lower octave\n() = higher octave\ntempo = " + tempo.text + " " + str(tempo.number) + "\n")
 for i in range(0, len(ntList)):
     sheet.write("a")
