@@ -1,0 +1,47 @@
+[] = lower octave
+() = higher octave
+tempo = andante moderato 84.0
+ab = 0.0 quarter notes long (0.0 ms)		7 notes
+a/b = 0.25 quarter notes long (178.57142857142856 ms)		40 notes
+a!b = 0.33 quarter notes long (235.7142857142857 ms)		1 note
+ab = 0.5 quarter notes long (357.1428571428571 ms)		73 notes
+a@b = 0.66 quarter notes long (471.4285714285714 ms)		1 note
+a_b = 0.75 quarter notes long (535.7142857142857 ms)		18 notes
+a  b = 1.0 quarter notes long (714.2857142857142 ms)		5 notes
+a / b = 1.25 quarter notes long (892.8571428571428 ms)		5 notes
+a ! b = 1.33 quarter notes long (950.0 ms)		1 note
+a  b = 1.5 quarter notes long (1071.4285714285713 ms)		1 note
+a @ b = 1.66 quarter notes long (1185.7142857142856 ms)		1 note
+a
+b = 2.0 quarter notes long (1428.5714285714284 ms)		3 notes
+a
+/b = 2.25 quarter notes long (1607.1428571428569 ms)		3 notes
+a
+b = 2.5 quarter notes long (1785.7142857142856 ms)		8 notes
+a
+_b = 2.75 quarter notes long (1964.2857142857142 ms)		1 note
+a
+
+b = 3.0 quarter notes long (2142.8571428571427 ms)		21 notes
+a
+
+/b = 3.25 quarter notes long (2321.428571428571 ms)		5 notes
+a
+
+b = 3.5 quarter notes long (2500.0 ms)		1 note
+a
+
+
+/b = 4.25 quarter notes long (3035.7142857142853 ms)		3 notes
+
+Sheet music:
+[5/5!c_5]
+/[c5!c]12!23_2 / [cc5c5]1@1
+
+/[5!5!c_5  c]1!1@232!2!223_2 / [c]1!12!1  12/321/232/135!cc3/5_321/2_32!1/112/1
+
+
+/[5!5!c_5 ! c5!c]_1 @ 2/23_2  [cc5c5]1@1
+
+
+/[5/5c_5 / c]1!1232!2!2!23_2 / [c]1!12!1  12/321/232135/cc3/5_321/2_32!1/112/11!1!1e  123@33@331 / 1/4!4/4@4/4@3212  3!3/23!33/3@22!22@11!1111!11_2!3!223412/321/232/135/cc3/5_321/2_32!1/112/112/321/232/135/cc3/5_321/2_32!1/112/121/212/121!212!1
