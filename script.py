@@ -1,9 +1,9 @@
 from music21 import converter, note, tempo
-import glob
+from glob import glob
 from statistics import mean
 
 #gets the first .mid file in the directory and converts it to a Music21 score
-score = converter.parse(glob.glob("./*.mid")[0])
+score = converter.parse(glob("*.mid")[0])
 
 #finds the tempo of the score
 for p in score.flat.elements:
@@ -105,9 +105,10 @@ for o in range (0, len(octaveslist)):
 #dealing with octaves jank
 octaveReplaceMap = {}
 while True:
-    if not input("Type something if you want to replace an octave with another octave:\n"):
+    inp = input("Enter an octave you want replaced followed by the octave you want to replace it with, leaving a space between the two numbers. If you don't want to replace anything, just hit enter:\n")
+    if not inp:
         break
-    replacement = [int(i) for i in input("Enter an octave you want replaced followed by the octave you want to replace it with, leaving a space between the two numbers:\n").split()]
+    replacement = [int(i) for i in inp.split()]
     octaveReplaceMap[replacement[0]] = replacement[1]
 for i in range(0, len(octaveslist)):
     if octaveslist[i] in octaveReplaceMap:
@@ -267,17 +268,19 @@ for nt in ntList:
     if int(nts[2:]) % 25 == 0:
         if int(nts[2:]) / 25 == 1:
             tempString += "/"
-        if int(nts[2:]) / 25 == 2:
+        elif int(nts[2:]) / 25 == 2:
             tempString += "-"
-        if int(nts[2:]) / 25 == 3:
+        elif int(nts[2:]) / 25 == 3:
             tempString += "_"
+        if nts[:1] == "1":
+            tempString += " "
     if int(nts[2:]) % 33 == 0:
         if int(nts[2:]) / 33 == 1:
             tempString += "!"
-        if int(nts[2:]) / 33 == 2:
+        elif int(nts[2:]) / 33 == 2:
             tempString += "@"
-    if nts[:1] == "1":
-        tempString += " "
+        if nts[:1] == "1":
+            tempString += " "
     ntMap[nt] = tempString
 
 sheet = open("sheet.txt", "w")
