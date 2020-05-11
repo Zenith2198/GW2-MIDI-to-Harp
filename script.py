@@ -272,6 +272,8 @@ for nt in ntList:
     else:
         for i in range(1, int(nts[:1])):
             tempString += "\n"
+    if float(nts) > 9.75:
+        nts = "9.75"
     if int(nts[2:]) % 25 == 0:
         if int(nts[2:]) / 25 == 1:
             tempString += "/"
@@ -290,7 +292,7 @@ for nt in ntList:
 
 sheet = open("sheet.txt", "w")
 # sheet = open("GW2-MIDI-to-Harp/sheet.txt", "w") #uncomment the one above if you got errors before :)
-sheet.write("[] = lower octave\n() = higher octave\ntempo = " + tempo.text + " " + str(tempo.number) + "\n")
+sheet.write("[] = lower octave\n() = higher octave\ntempo = " + (tempo.text if tempo.text else "") + " " + str(tempo.number) + "\n")
 for i in range(0, len(ntList)):
     sheet.write("a")
     sheet.write(ntMap[ntList[i]])

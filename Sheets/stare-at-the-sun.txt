@@ -1,0 +1,54 @@
+[] = lower octave
+() = higher octave
+tempo =  190.0
+ab = 0.5 quarter notes long (157.89473684210526 ms)		24 notes
+a b = 1.0 quarter notes long (315.7894736842105 ms)		70 notes
+a  b = 1.5 quarter notes long (473.6842105263158 ms)		37 notes
+a
+b = 2.0 quarter notes long (631.578947368421 ms)		10 notes
+a
+b = 2.5 quarter notes long (789.4736842105262 ms)		2 notes
+a
+
+b = 3.0 quarter notes long (947.3684210526316 ms)		6 notes
+a
+
+b = 3.5 quarter notes long (1105.2631578947369 ms)		6 notes
+a
+
+
+b = 4.0 quarter notes long (1263.157894736842 ms)		1 note
+a
+
+
+
+b = 5.0 quarter notes long (1578.9473684210525 ms)		2 notes
+a
+
+
+
+b = 5.5 quarter notes long (1736.842105263158 ms)		1 note
+a _b = 14.0 quarter notes long (4421.0526315789475 ms)		1 note
+
+Sheet music:
+[5]11 1 [e e 5 5]  1 11 [e e 5 5 e  e]
+[5 e]  1
+
+
+
+[5]11 1  22  [ee]  33 3  44  33  32  [e]
+
+3  22  33 3 3 3 [e] 3  4  55  4 311 1 [e e]
+[5]  11 1 3 1 [e e 5e e]
+
+2 3  2  111 1 11 2 3 2 2  3 33 4 4  55  44 35  44  53 3 3 3 [e] 3  4  55  4 3 _(1)5 5 4 4 3 3  (1)5 5 4 4 3 3  44 4 3 5  4 4 3 55543 [e] 43
+
+[e] 4  4  3
+
+[e] 4  4  243
+
+[e] 43
+
+[e] 4  4  3
+
+[e] 4  4  421
