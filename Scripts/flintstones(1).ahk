@@ -4,7 +4,7 @@ Sleep, 107.14285714285714
 SendInput, c
 Sleep, 107.14285714285714
 SendInput, e
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 107.14285714285714
 SendInput, 1
@@ -18,7 +18,7 @@ Sleep, 107.14285714285714
 SendInput, 5
 Sleep, 428.57142857142856
 SendInput, 1
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 214.28571428571428
 SendInput, 1
@@ -56,7 +56,7 @@ Sleep, 107.14285714285714
 SendInput, c
 Sleep, 107.14285714285714
 SendInput, e
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 107.14285714285714
 SendInput, 1
@@ -70,7 +70,7 @@ Sleep, 107.14285714285714
 SendInput, 5
 Sleep, 428.57142857142856
 SendInput, 1
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 214.28571428571428
 SendInput, 1
@@ -104,7 +104,7 @@ Sleep, 1178.5714285714284
 SendInput, e
 Sleep, 428.57142857142856
 SendInput, 3
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 214.28571428571428
 SendInput, 1
@@ -148,7 +148,7 @@ Sleep, 107.14285714285714
 SendInput, c
 Sleep, 107.14285714285714
 SendInput, e
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 107.14285714285714
 SendInput, 1
@@ -162,7 +162,7 @@ Sleep, 107.14285714285714
 SendInput, 5
 Sleep, 428.57142857142856
 SendInput, 1
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 214.28571428571428
 SendInput, 1
@@ -196,7 +196,7 @@ Sleep, 857.1428571428571
 SendInput, 5
 Sleep, 428.57142857142856
 SendInput, 1
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 214.28571428571428
 SendInput, 1
@@ -234,7 +234,7 @@ Sleep, 107.14285714285714
 SendInput, c
 Sleep, 107.14285714285714
 SendInput, e
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 107.14285714285714
 SendInput, 1
@@ -248,7 +248,7 @@ Sleep, 107.14285714285714
 SendInput, 5
 Sleep, 428.57142857142856
 SendInput, 1
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 214.28571428571428
 SendInput, 1
@@ -282,7 +282,7 @@ Sleep, 1178.5714285714284
 SendInput, e
 Sleep, 428.57142857142856
 SendInput, 3
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 214.28571428571428
 SendInput, 1
@@ -326,7 +326,7 @@ Sleep, 107.14285714285714
 SendInput, c
 Sleep, 107.14285714285714
 SendInput, e
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 107.14285714285714
 SendInput, 1
@@ -340,7 +340,7 @@ Sleep, 107.14285714285714
 SendInput, 5
 Sleep, 428.57142857142856
 SendInput, 1
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 214.28571428571428
 SendInput, 1
@@ -384,7 +384,7 @@ Sleep, 214.28571428571428
 SendInput, 4
 Sleep, 214.28571428571428
 SendInput, 5
-SendInput, q
+SendInput, z
 Sleep, 1
 Sleep, 214.28571428571428
 SendInput, 1
