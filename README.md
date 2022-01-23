@@ -2,7 +2,7 @@
 
 To use this, you must have [Python 3](https://www.python.org/), [Music21](https://web.mit.edu/music21/), and [AutoHotkey](https://www.autohotkey.com/) installed. You must also have an environment to run Python scripts in! I recommend [VSCode](https://code.visualstudio.com/) if you don't have one already.
 
-Make sure there is only one .mid (MIDI) file in the same directory as the script, as it just uses the first MIDI it finds in the directory.  Instructions are printed to the terminal, so all you have to do is follow along for the most part. Before you start, set up the keybinds.txt file with your keybinds for the 10 abilities. If you had the default keybinds, the file would read "1234567890".
+The script requires there to be exactly one .mid file in the same directory. If there isn't one, you will get an index out of range. If there is more than one, it will simply use the first one it finds.  Instructions are printed to the terminal, so all you have to do is follow along for the most part. Before you start, set up the keybinds.txt file with your keybinds for the 10 abilities. If you had the default keybinds, the file would read "1234567890".
 
 Notes about selecting a track and removing notes:
 * Many MIDIs simply will not work or will be quite painful to get to work with this script. Try to find a MIDI where the *main* piece of the music is in its own track.
@@ -18,4 +18,4 @@ The Python script will generate a .ahk (AutoHotkey) file that starts with sleepi
 
 The script will also generate a sheet music text file as long as the MIDI isn't too janky. Currently, it supports notes that are 0 to 9.75 quarter notes. Within each "quarter note section", it supports decimals of .25, .33, .5, .66, and .75. The sheet music may be horrible to read if the MIDI isn't great, so you may need to go in and custom edit some notes. The sheet music gives you pretty much all the information you should need to make any changes you'd like including tempo, the number of notes for each note type, and how long in milliseconds each note type is. If that isn't enough information for you, I encourage you to look more into Music21's documentation and edit my code. The MIDIs have pretty much everything in there if you look hard enough.
 
-If you're getting an error stating list index out of range, you're in the wrong directory. Make sure you're in the GW2-MIDI-to-Harp folder, and not the directory above.
+If you're getting an error stating list index out of range, you might be in the wrong directory. Make sure you're in the GW2-MIDI-to-Harp folder, and not the directory above.
